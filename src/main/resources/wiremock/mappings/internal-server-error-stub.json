@@ -1,0 +1,19 @@
+{
+  "priority": 500,
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/api/wiremock",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$[?(@.message == '500')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 500,
+    "body": "{\"message\": \"500 Bad Request\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

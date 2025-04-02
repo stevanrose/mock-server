@@ -1,0 +1,19 @@
+{
+  "priority": 201,
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/api/wiremock",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$[?(@.message == '201')]"
+      }
+    ]
+  },
+  "response": {
+    "status": 418,
+    "body": "{\"message\": \"201 Accepted\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

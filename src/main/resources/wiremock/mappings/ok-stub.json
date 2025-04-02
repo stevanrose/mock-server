@@ -1,0 +1,14 @@
+{
+  "priority": 999,
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/api/wiremock"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"message\": \"200 ok\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
